@@ -1,3 +1,9 @@
+이 레포지토리에서 주목해야 할 것.
++ NerdTree 플러그인: vim화면 좌측에 파일트리를 생성
++ 하단에 작은 터미널 창을 생성
++ aitline을 통해 편집중인 파일의 상태를 직관적으로 확인 가능.
++ 간단한 문법검사.
+
 ![vimset_Screenshot](https://github.com/hoysong/songbird_vim/blob/main/example.png)
 
 1. patch.sh will 'rm -rf ~/.vimrc'.
