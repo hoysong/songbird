@@ -1,3 +1,5 @@
+![vimset_Screenshot](https://github.com/hoysong/songbird_vim/blob/main/example.png)
+
 1. patch.sh will 'rm -rf ~/.vimrc'.
 patch.sh는 'rf -rf ~/.vimrc'를 할것입니다.
 
