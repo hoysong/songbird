@@ -50,3 +50,5 @@ autocmd VimEnter * NERDTree | wincmd p \" nerdtree를 toggle on하고 커서를 
 \" Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(\":quit\<CR>:\<BS>\") | endif
 \" .zshrc 파일의 마지막에 ls를 추가하면 목록이 출력됩니다." > ~/.vimrc
+
+echo "done! type ':PluginInstall' and reboot your term to apply plugins."
