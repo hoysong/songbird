@@ -1,54 +1,50 @@
-echo "clone vundlevim..."
+clear
+echo -e "\033[32m
+ _____                   _     _         _ 
+/  ___|   song_bird     | |   (_)       | |
+\ \`--.  ___  _ __   __ _| |__  _ _ __ __| |
+ \`--. \/ _ \| '_ \ / _\` | '_ \| | '__/ _\` |
+/\__/ / (_) | | | | (_| | |_) | | | | (_| |
+\____/ \___/|_| |_|\__, |_.__/|_|_|  \__,_|
+                    __/ |   vim_setup.sh               
+                   |___/                   
+\033[0m"
+echo -e "\033[32mvundlevim=============\033[0m"
+echo "install vundlevim"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+echo "done!"
+echo ""
 
-echo "del .vimrc..."
+echo -e "\033[32mvim plug==============\033[0m"
+echo "install vim-plug..."
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+echo "done!"
+echo ""
+
+echo -e "\033[32mvimrc=================\033[0m"
+echo "delete origin vimrc"
 rm -rf ~/.vimrc
-echo "copy .vimrc..."
+echo "copy new vimrc"
+cp .vimrc ~/
+echo "done!"
+echo ""
 
-echo "if has(\"systax\")
-    syntax on
-endif
+echo -e "\033[32mnodejs_setup==========\033[0m"
+echo "curl npm..."
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh ~/ | bash
+echo "install nodejs 16..."
+nvm install 16
+echo "done!"
+echo ""
 
-set autoindent
-set cindent
-set smartindent
-set ts=4
-set shiftwidth=4
-set hlsearch
-set nu
-
-set list lcs=tab:\ \ │
-set relativenumber
-\" Enable copy to clipboard
-set clipboard=unnamed
-
-\" === 터미널 관련 설정 ===
-\"set termwinsize=10x200 \" vim 안에서 ':term' 명령을 통해 생성된 터미널의 크기입니다. (수직)x(수평)
-\"autocmd VimEnter * below term  
-\"autocmd VimEnter * wincmd k \" 생성된 터미널에 있는 커서를 편집중인 파일로 이동합니다.
-\" === 터미널 관련 설정 끝 ===
-\"
-set omnifunc=syntaxcomplete#Complete
-
-filetype plugin indent on    \" required
-set nocompatible              \" be iMproved, required
-filetype off                  \" required
-
-set rtp+=~/.vim/bundle/Vundle.vim \" set the runtime path to include Vundle and initialize
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim' \"let Vundle manage Vundle, required
-\" add airline design
-Plugin 'vim-airline/vim-airline'
-Plugin 'scrooloose/nerdtree' \"FileTreePlugin. :NERDTreeToggle로 on off가능
-Plugin 'scrooloose/syntastic' \"코드 문법체크 플러그인
-Plugin 'nathanaelkane/vim-indent-guides' \" 인던트 라인
-call vundle#end()            \" required
-
-filetype plugin indent on    \" required
-
-autocmd VimEnter * NERDTree | wincmd p \" nerdtree를 toggle on하고 커서를 우측(편집중인 파일)로 이동합니다.
-\" Exit Vim if NERDTree is the only window remaining in the only tab.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(\":quit\<CR>:\<BS>\") | endif
-\" .zshrc 파일의 마지막에 ls를 추가하면 목록이 출력됩니다." > ~/.vimrc
-
-echo "done! type ':PluginInstall' and reboot your term to apply plugins."
+echo -e "\033[32mall_setup done!=======\033[0m"
+echo ""
+echo -e "\033[31m	WARNING!!\033[0m"
+echo "there are 'few simple steps' left."
+echo "0. open ANY C files."
+echo "1. Type ':' from NORMAL mode to enter command mode."
+echo "2. type \":PlugInstall\" and press enter."
+echo "3. type \":PluginInstall\" and press enter."
+echo "4. type \":CocCommand clangd.install\" and press enter."
+echo ""
