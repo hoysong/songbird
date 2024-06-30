@@ -50,6 +50,7 @@ call plug#end()
 filetype plugin indent on    " required
 
 autocmd VimEnter * NERDTree | wincmd p " nerdtree를 toggle on하고 커서를 우측(편집중인 파일)로 이동합니다.
+autocmd VimEnter * highlight CocFloating ctermbg=0
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
 " .zshrc 파일의 마지막에 ls를 추가하면 목록이 출력됩니다.
