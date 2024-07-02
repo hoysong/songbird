@@ -11,20 +11,20 @@ echo -e "\033[32m
 \033[0m"
 echo -e "\033[32mvundlevim=============\033[0m"
 echo "install vundlevim"
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+#git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "done!"
 echo ""
 
 echo -e "\033[32mvim plug==============\033[0m"
 echo "install vim-plug..."
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+#curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+#    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo "done!"
 echo ""
 
 echo -e "\033[32mvimrc=================\033[0m"
 echo "delete origin vimrc"
-rm -rf ~/.vimrc
+#rm -rf ~/.vimrc
 echo "copy new vimrc"
 cp .vimrc ~/
 echo "done!"
@@ -32,8 +32,7 @@ echo ""
 
 echo -e "\033[32mnodejs_setup==========\033[0m"
 echo "curl npm..."
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh ~/ | bash
-echo "install nodejs 16..."
+#curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh ~/ | bash
 echo "done!"
 echo ""
 
