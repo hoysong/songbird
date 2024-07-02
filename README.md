@@ -7,8 +7,8 @@
 
 ![vimset_Screenshot](https://github.com/hoysong/songbird_vim/blob/main/example.png)
 
-1. patch.sh will 'rm -rf ~/.vimrc'.
-patch.sh는 'rf -rf ~/.vimrc'를 할것입니다.
+1. patch.sh will 'rm ~/.vimrc'.
+patch.sh는 'rm ~/.vimrc'를 할것입니다.
 
 this mean you should backup your original .vimrc
 이것은 .vimrc를 백업해야 한다는 것을 의미합니다.
