@@ -4,6 +4,13 @@
 + airline을 통해 편집중인 파일의 상태를 직관적으로 확인 가능.
 + cocnvim을 통해 vscode의 자동완성을 구현
 + 간단한 문법검사.
+# 도움받은 레포지토리
++ [cocnvim](https://github.com/neoclide/coc.nvim)
++ [NERDtree](https://github.com/preservim/nerdtree)
++ [stntastic](https://github.com/vim-syntastic/syntastic)
++ [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
++ [vim-plug](https://github.com/junegunn/vim-plug)
+
 
 ![vimset_Screenshot](https://github.com/hoysong/songbird_vim/blob/main/example.png)
 
