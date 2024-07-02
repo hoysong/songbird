@@ -34,7 +34,7 @@ Plugin 'VundleVim/Vundle.vim' "let Vundle manage Vundle, required
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree' "FileTreePlugin. :NERDTreeToggle로 on off가능
 Plugin 'scrooloose/syntastic' "코드 문법체크 플러그인
-Plugin 'nathanaelkane/vim-indent-guides' " 인던트 라인
+" Plugin 'nathanaelkane/vim-indent-guides' " 인던트 라인
 call vundle#end()            " required
 " vimplug_init
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
