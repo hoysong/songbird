@@ -22,11 +22,11 @@ echo "install vim-plug..."
 echo "done!"
 echo ""
 
-echo -e "\033[32mvimrc=================\033[0m"
+echo -e "\033[32mvimrc_setup=================\033[0m"
 echo "delete origin vimrc"
-#rm -rf ~/.vimrc
+#rm ~/.vimrc
 echo "copy new vimrc"
-cp .vimrc ~/
+#cp .vimrc ~/
 echo "done!"
 echo ""
 
@@ -36,15 +36,36 @@ echo "curl npm..."
 echo "done!"
 echo ""
 
-echo -e "\033[32mall_setup done!=======\033[0m"
+echo -e "\033[32mAUTO_PATCH_DONE=======\033[0m"
 echo ""
-echo -e "\033[31m	WARNING!!\033[0m"
+echo -e "\033[31m	NOTICE!!\033[0m"
 echo "there are 'few simple steps' left."
-echo "0.type \"nvm install 16\" in terminal"
-echo "1. open ANY C files."
-echo "2. Type ':' from NORMAL mode to enter command mode."
-echo "3. Type \":PlugInstall\" and press enter."
-echo "4. Type \":PluginInstall\" and press enter."
-echo "5. Type \":CocInstall coc-clangd\" and press enter."
-echo "6. Type \":CocCommand clangd.install\" and press enter."
+
+echo -n "├─0.type \""
+echo -en "\033[32mnvm install 16\033[0m"
+echo "\" in terminal"
+
+echo "├─1. open ANY C files."
+
+echo -n "├─2. Type '"
+echo -en "\033[32m:\033[0m"
+echo "' from NORMAL mode to enter command mode."
+
+echo -n "├─3. Type \""
+echo -en "\033[32m:PlugInstall\033[0m"
+echo "\" and press enter."
+
+echo -n "├─4. Type \""
+echo -en "\033[32m:PluginInstall\033[0m"
+echo "\" and press enter."
+
+echo -n "├─5. Type \""
+echo -en "\033[32m:CocInstall coc-clangd\033[0m"
+echo "\" and press enter."
+
+echo -n "├─6. Type \""
+echo -en "\033[32m:CocCommand clangd.install\033[0m"
+echo "\" and press enter."
+
+echo "└─7. All setup done open new terminal"
 echo ""
