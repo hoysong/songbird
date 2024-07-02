@@ -1,7 +1,7 @@
 # 도움받은 레포지토리
 + [cocnvim](https://github.com/neoclide/coc.nvim)
 + [NERDtree](https://github.com/preservim/nerdtree)
-+ [stntastic](https://github.com/vim-syntastic/syntastic)
++ [syntastic](https://github.com/vim-syntastic/syntastic)
 + [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
 + [vim-plug](https://github.com/junegunn/vim-plug)
 
