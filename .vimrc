@@ -16,9 +16,9 @@ set relativenumber
 set clipboard=unnamed
 
 " === 터미널 관련 설정 ===
-"set termwinsize=10x210 " vim 안에서 ':term' 명령을 통해 생성된 터미널의 크기입니다. (수직)x(수평)
-"autocmd VimEnter * below term  
-"autocmd VimEnter * wincmd k " 생성된 터미널에 있는 커서를 편집중인 파일로 이동합니다.
+set termwinsize=10x210 " vim 안에서 ':term' 명령을 통해 생성된 터미널의 크기입니다. (수직)x(수평)
+autocmd VimEnter * below term  
+autocmd VimEnter * wincmd k " 생성된 터미널에 있는 커서를 편집중인 파일로 이동합니다.
 " === 터미널 관련 설정 끝 ===
 "
 set omnifunc=syntaxcomplete#Complete
@@ -49,7 +49,7 @@ call plug#end()
 
 filetype plugin indent on    " required
 
-autocmd VimEnter * NERDTree | wincmd p " nerdtree를 toggle on하고 커서를 우측(편집중인 파일)로 이동합니다.
+autocmd VimEnter * NERDTree | set nu | wincmd p " nerdtree를 toggle on하고 커서를 우측(편집중인 파일)로 이동합니다.
 autocmd VimEnter * highlight CocFloating ctermbg=0
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
