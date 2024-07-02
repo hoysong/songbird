@@ -9,7 +9,7 @@
 + vim의 일부 유용한 플러그인들을 간단하게 패치할 수 있는 스크립트입니다.
 + NerdTree 플러그인: vim화면 좌측에 파일트리를 생성
 + airline을 통해 편집중인 파일의 상태를 직관적으로 확인 가능.
-+ cocnvim을 통해 vscode의 자동완성을 구현
++ cocnvim을 통해 vscode의 자동완성 기능.
 + include한 헤더로부터의 함수들도 추적합니다.
 + 간단한 문법검사.
 ![vimset_Screenshot](https://github.com/hoysong/songbird_vim/blob/main/example.png)
@@ -48,7 +48,7 @@ ctrl+w를 누른 이후...
 	등등을 키워드와 색상을 통해 직관적으로 나타냅니다.
 
 4. 문법검사
-.c파일에서는 간단하게 잘 작동하는 것을확인하였습니다.
+.c파일에서는 간단하게 잘 작동하는 것을 확인하였습니다.
 airline 하단의 공간에 문법이 틀리면 알려줍니다.
 
 5. cocnvim(자동완성)
