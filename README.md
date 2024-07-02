@@ -10,6 +10,7 @@
 + NerdTree 플러그인: vim화면 좌측에 파일트리를 생성
 + airline을 통해 편집중인 파일의 상태를 직관적으로 확인 가능.
 + cocnvim을 통해 vscode의 자동완성을 구현
++ include한 헤더로부터의 함수들도 추적합니다.
 + 간단한 문법검사.
 ![vimset_Screenshot](https://github.com/hoysong/songbird_vim/blob/main/example.png)
 
