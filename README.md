@@ -1,7 +1,8 @@
-# 이 레포지토리에서 주목해야 할 것.
+# 레포지토리 정보
++ vim의 일부 유용한 플러그인들을 간단하게 패치할 수 있는 스크립트입니다.
 + NerdTree 플러그인: vim화면 좌측에 파일트리를 생성
-+ 하단에 작은 터미널 창을 생성
-+ aitline을 통해 편집중인 파일의 상태를 직관적으로 확인 가능.
++ airline을 통해 편집중인 파일의 상태를 직관적으로 확인 가능.
++ cocnvim을 통해 vscode의 자동완성을 구현
 + 간단한 문법검사.
 
 ![vimset_Screenshot](https://github.com/hoysong/songbird_vim/blob/main/example.png)
@@ -13,9 +14,12 @@ this mean you should backup your original .vimrc
 이것은 .vimrc를 백업해야 한다는 것을 의미합니다.
 
 2. If you already satisfied with you're useing now you don't have to use this shell script.
-만약 당신이 이미 사용중인 설정에 만족한다면 이 쉘 스크립드를 사용할 필요가 없습니다.
+만약 당신이 이미 사용중인 vim설정에 만족한다면 이 쉘 스크립드를 사용할 필요가 없습니다.
 
 # how to install
+bash patch.sh 를 통해 스크립트를 실행합니다.
+이후 마지막 유저 설정을 안내에 따라 설치합니다.
+
 간단 사용법은 아래와 같습니다.
 1. NerdTree
 ':NERDTree'를 입력하여 파일트리를 활성화합니다.
@@ -40,4 +44,5 @@ ctrl+w를 누른 이후,
 .c파일에서는 간단하게 잘 작동하는 것을확인하였습니다.
 airline 하단의 공간에 문법이 틀리면 알려줍니다.
 
-터미널을 닫는 방법은 터미널 창에서 커서가 있는 상태에서 exit을 입력하면 됩니다.
+4. 하단터미널
+하단터미널을 사용하려면 === 터미널 관련 설정 === 의 주석을 해제하세요.
