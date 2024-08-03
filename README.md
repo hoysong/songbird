@@ -27,7 +27,7 @@ this mean you should backup your original .vimrc
 bash patch.sh 를 통해 스크립트를 실행합니다.
 이후 마지막 유저 설정을 안내에 따라 설치합니다.
 
-간단 사용법은 아래와 같습니다.
+# 간단 사용법
 1. NerdTree
 ':NERDTree'를 입력하여 파일트리를 활성화합니다.
 nerdtree의 커서에서 s를 누르면 창을 분할하여 파일을 열 수 있습니다.
