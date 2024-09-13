@@ -38,6 +38,7 @@ Plugin 'scrooloose/syntastic' "코드 문법체크 플러그인
 " 컬러스키마
 Plugin 'morhetz/gruvbox'
 Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'lifepillar/vim-solarized8'
 " Plugin 'nathanaelkane/vim-indent-guides' " 인던트 라인
 call vundle#end()            " required
 " vimplug_init
@@ -67,6 +68,7 @@ let g:coc_disable_startup_warning = 1
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
 "(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
+
 if (empty($TMUX) && getenv('TERM_PROGRAM') != 'Apple_Terminal')
   if (has("nvim"))
     "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
@@ -86,10 +88,10 @@ endif
 "        gruvbox setting
 "        quote below if you don't need.
 "=================================================
-colorscheme gruvbox
-
-set background=dark
-let g:gruvbox_contrast_dark='soft'
+"colorscheme gruvbox
+"
+"set background=dark
+"let g:gruvbox_contrast_dark='soft'
 "=================gruvbox set_done================
 "=================================================
 
@@ -104,3 +106,6 @@ let g:gruvbox_contrast_dark='soft'
 "colorscheme dracula
 "=================dracula set_done================
 "=================================================
+
+set background=dark
+autocmd vimenter * ++nested colorscheme solarized8
