@@ -15,7 +15,6 @@ set relativenumber
 " Enable copy to clipboard
 set clipboard=unnamed
 
-colorscheme gruvbox
 " === 터미널 관련 설정 ===
 set termwinsize=10x210 " vim 안에서 ':term' 명령을 통해 생성된 터미널의 크기입니다. (수직)x(수평)
 autocmd VimEnter * below term  
@@ -58,9 +57,11 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 " .zshrc 파일의 마지막에 ls를 추가하면 목록이 출력됩니다.
 let g:coc_disable_startup_warning = 1
 
-"=================================
+"=================================================
 "        gruvbox setting
-"=================================
+"        quote below if you don't need.
+"=================================================
+colorscheme gruvbox
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
 "(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
@@ -79,3 +80,7 @@ endif
 
 set background=dark
 let g:gruvbox_contrast_dark='soft'
+"=================gruvbox set_done================
+"=================================================
+
+
