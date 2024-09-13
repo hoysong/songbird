@@ -15,10 +15,6 @@ set relativenumber
 " Enable copy to clipboard
 set clipboard=unnamed
 
-" 기본으로 NerdTree를 활성화 할지 선택합니다.
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd k " 생성된 터미널에 있는 커서를 편집중인 파일로 이동합니다.
-
 " === 터미널 관련 설정 (필요하지 않다면 주석처리 하십쇼.) ===
 "set termwinsize=10x210 " vim 안에서 ':term' 명령을 통해 생성된 터미널의 크기입니다. (수직)x(수평)
 "autocmd VimEnter * below term  
@@ -105,7 +101,8 @@ endif
 set background=dark
 autocmd vimenter * ++nested colorscheme solarized8
 
-filetype plugin indent on    " required autocmd VimEnter * NERDTree | set nu | wincmd p " nerdtree를 toggle on하고 커서를 우측(편집중인 파일)로 이동합니다.
+filetype plugin indent on    " required
+autocmd VimEnter * NERDTree | set nu | wincmd p " nerdtree를 toggle on하고 커서를 우측(편집중인 파일)로 이동합니다.
 autocmd VimEnter * highlight CocFloating ctermbg=0
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
