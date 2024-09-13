@@ -79,10 +79,10 @@ endif
 "        gruvbox setting
 "        quote below if you don't need.
 "=================================================
-"colorscheme gruvbox
-"
-"set background=dark
-"let g:gruvbox_contrast_dark='soft'
+colorscheme gruvbox
+
+set background=dark
+let g:gruvbox_contrast_dark='soft'
 
 "=================================================
 "        dracula setting
@@ -98,8 +98,8 @@ endif
 "        solarized8 setting
 "        quote below if you don't need.
 "=================================================
-set background=dark
-autocmd vimenter * ++nested colorscheme solarized8
+"set background=dark
+"autocmd vimenter * ++nested colorscheme solarized8
 
 filetype plugin indent on    " required
 autocmd VimEnter * NERDTree | set nu | wincmd p " nerdtree를 toggle on하고 커서를 우측(편집중인 파일)로 이동합니다.
