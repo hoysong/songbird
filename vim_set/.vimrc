@@ -1,7 +1,6 @@
 if has("systax")
     syntax on
 endif
-
 set autoindent
 set cindent
 set smartindent
@@ -16,6 +15,7 @@ set relativenumber
 " Enable copy to clipboard
 set clipboard=unnamed
 
+colorscheme gruvbox
 " === 터미널 관련 설정 ===
 set termwinsize=10x210 " vim 안에서 ':term' 명령을 통해 생성된 터미널의 크기입니다. (수직)x(수평)
 autocmd VimEnter * below term  
@@ -35,6 +35,7 @@ Plugin 'VundleVim/Vundle.vim' "let Vundle manage Vundle, required
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree' "FileTreePlugin. :NERDTreeToggle로 on off가능
 Plugin 'scrooloose/syntastic' "코드 문법체크 플러그인
+Plugin 'morhetz/gruvbox' "gruvbox 컬러스키마
 " Plugin 'nathanaelkane/vim-indent-guides' " 인던트 라인
 call vundle#end()            " required
 " vimplug_init
@@ -56,3 +57,25 @@ autocmd VimEnter * highlight CocFloating ctermbg=0
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
 " .zshrc 파일의 마지막에 ls를 추가하면 목록이 출력됩니다.
 let g:coc_disable_startup_warning = 1
+
+"=================================
+"        gruvbox setting
+"=================================
+"Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+"If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
+"(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
+if (empty($TMUX) && getenv('TERM_PROGRAM') != 'Apple_Terminal')
+  if (has("nvim"))
+    "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  "For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
+  "Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
+  " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
+
+set background=dark
+let g:gruvbox_contrast_dark='soft'
