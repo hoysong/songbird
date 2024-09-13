@@ -17,6 +17,7 @@ set clipboard=unnamed
 
 " 기본으로 NerdTree를 활성화 할지 선택합니다.
 autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd k " 생성된 터미널에 있는 커서를 편집중인 파일로 이동합니다.
 
 " === 터미널 관련 설정 (필요하지 않다면 주석처리 하십쇼.) ===
 "set termwinsize=10x210 " vim 안에서 ':term' 명령을 통해 생성된 터미널의 크기입니다. (수직)x(수평)
