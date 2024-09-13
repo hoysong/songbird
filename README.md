@@ -20,7 +20,8 @@ patch.sh는 'rm ~/.vimrc'를 할것입니다.
 this mean you should backup your original .vimrc
 이것은 .vimrc를 백업해야 한다는 것을 의미합니다.
 
-2. If you already satisfied with you're useing now you don't have to use this shell script.
+2. If you already satisfied with you're useing no
+3. w you don't have to use this shell script.
 만약 당신이 이미 사용중인 vim설정에 만족한다면 이 쉘 스크립드를 사용할 필요가 없습니다.
 
 # how to install
@@ -28,7 +29,7 @@ bash patch.sh 를 통해 스크립트를 실행합니다.
 이후 마지막 유저 설정을 안내에 따라 설치합니다.
 
 # 간단 사용법
-1. NerdTree
+1. NerdTree (기본 활성화 상태)
 ':NERDTree'를 입력하여 파일트리를 활성화합니다.
 nerdtree의 커서에서 s를 누르면 창을 분할하여 파일을 열 수 있습니다.
 
@@ -47,10 +48,22 @@ ctrl+w를 누른 이후...
 	visual모드인지,
 	등등을 키워드와 색상을 통해 직관적으로 나타냅니다.
 
-4. 문법검사
+5. 문법검사 (비활성화)
 .c파일에서는 간단하게 잘 작동하는 것을 확인하였습니다.
 airline 하단의 공간에 문법이 틀리면 알려줍니다.
+cocnvim과 문법검사 기능이 겹쳐서 비활성화 상태입니다.
+cocnvim 플러그인을 통해 에러를 잡아낼 수 있기에 굳이 필요하지는 않습니다..
 
-5. cocnvim(자동완성)
+7. cocnvim(자동완성)
+자동추천을 통해 함수의 프로토타입을 띄워줍니다.
+자동추천 플로팅을 통해 리턴타입, 주석설명 알 수 있습니다.
+*.h 파일에 프로토타입을 추가하고 프로토타입의 바로 위 라인에 주석을 설명처럼 사용할 수 있습니다.
+아래 예제와 같이 표기한다면 cocnvim의 플로팅을 통해 함수의 설명을 볼 수 있습니다.
+예제: hello.h 파일에..
+	//hello world!를 출력하는 함수입니다.
+	print_hello();
+위와 같이 한다면 print_hello입력 시 'hello world!를 출력하는 함수입니다.'를 볼 수 있습니다.
+ 
+문법검사를 진행합니다.
 + ctrl+n을 누르면 다음 추천 단어를 선택합니다.
 + ctrl+p를 누르면 이전 추천 단어를 선택합니다.
