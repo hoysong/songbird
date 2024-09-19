@@ -13,6 +13,8 @@ fi
 
 curl --location --output $APP_NAME "$dl_url"
 
+chmod 777 $APP_NAME
+
 DSKTP_FILE="[Desktop Entry]
 Name=Obsidian
 Exec=/home/$USER_NAME/obsidian/$APP_NAME %u
