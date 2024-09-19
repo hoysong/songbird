@@ -27,4 +27,8 @@ Comment=Obsidian
 Categories=Office;
 MimeType=text/html;x-scheme-handler/obsidian;"
 
-echo "$DSKTP_FILE" > /usr/share/applications/obsidian.desktop
+#echo "$DSKTP_FILE" > /usr/share/applications/obsidian.desktop
+
+mkdir ~/ obsidian
+mv $APP_NAME ~/obsidian
+cp ./obsidian.png ~/obsidian
