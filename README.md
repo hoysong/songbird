@@ -4,6 +4,7 @@
 + [syntastic](https://github.com/vim-syntastic/syntastic)
 + [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
 + [vim-plug](https://github.com/junegunn/vim-plug)
++ [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 
 # 레포지토리 정보
 + vim의 일부 유용한 플러그인들을 간단하게 패치할 수 있는 스크립트입니다.
