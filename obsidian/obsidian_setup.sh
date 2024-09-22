@@ -1,5 +1,6 @@
 USER_NAME=$(whoami)
 APP_NAME=Obsidian.AppImage
+YOUR_OBSIDIAN_REPO=git@github.com:hoysong/obsidian_vault.git
 
 echo "Download $APP_NAME..."
 dl_url=$( curl -s https://api.github.com/repos/obsidianmd/obsidian-releases/releases/latest  \
@@ -27,8 +28,9 @@ Comment=Obsidian
 Categories=Office;
 MimeType=text/html;x-scheme-handler/obsidian;"
 
-#echo "$DSKTP_FILE" > /usr/share/applications/obsidian.desktop
+echo "$DSKTP_FILE" > ~/.local/share/applications/obsidian.desktop
 
 mkdir ~/obsidian
 mv $APP_NAME ~/obsidian
 cp ./obsidian.png ~/obsidian
+git -C ~/obsidian clone $YOUR_OBSIDIAN_REPO
