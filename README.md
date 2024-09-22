@@ -1,11 +1,12 @@
-# 도움받은 레포지토리
+# 도움받은 레포지토리 및 자료
 + [cocnvim](https://github.com/neoclide/coc.nvim)
 + [NERDtree](https://github.com/preservim/nerdtree)
 + [syntastic](https://github.com/vim-syntastic/syntastic)
 + [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
 + [vim-plug](https://github.com/junegunn/vim-plug)
 + [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
-
++ [installing Obsidian](https://gist.github.com/shaybensasson/3e8e49af92d7e5013fc77da22bd3ae4c#file-install-obsidian-sh)
++ [desktop entry path](https://askubuntu.com/questions/1351795/create-launcher-for-application-not-in-usr-share-applications-in-ubuntu-20-04)
 # 레포지토리 정보
 + vim의 일부 유용한 플러그인들을 간단하게 패치할 수 있는 스크립트입니다.
 + NerdTree 플러그인: vim화면 좌측에 파일트리를 생성
