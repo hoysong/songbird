@@ -15,7 +15,7 @@ set relativenumber
 " Enable copy to clipboard
 set clipboard=unnamed
 
-" === 터미널 관련 설정 (필요하지 않다면 주석처리 하십쇼.) ===
+" === 터미널 관련 설정 (필요 여부에 따라 주석설정.) ===
 "set termwinsize=10x210 " vim 안에서 ':term' 명령을 통해 생성된 터미널의 크기입니다. (수직)x(수평)
 "autocmd VimEnter * below term  
 "autocmd VimEnter * wincmd k " 생성된 터미널에 있는 커서를 편집중인 파일로 이동합니다.
@@ -79,20 +79,20 @@ endif
 "        gruvbox setting
 "        quote below if you don't need.
 "=================================================
-colorscheme gruvbox
-
-set background=dark
-let g:gruvbox_contrast_dark='soft'
+"colorscheme gruvbox
+"
+"set background=dark
+"let g:gruvbox_contrast_dark='soft'
 
 "=================================================
 "        dracula setting
 "        quote below if you don't need.
 "=================================================
-"if v:version < 802
-"    packadd! dracula
-"endif
-"syntax enable
-"colorscheme dracula
+if v:version < 802
+    packadd! dracula
+endif
+syntax enable
+colorscheme dracula
 
 "=================================================
 "        solarized8 setting
