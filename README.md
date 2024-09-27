@@ -18,17 +18,24 @@
 + cocnvim을 통해 vscode의 자동완성 기능.
 + include한 헤더로부터의 함수들도 추적합니다.
 + 간단한 문법검사.
++ obsidian의 appimg를 다운로드 합니다.
++ obsidian을 desktop entry에 등록합니다.
+(desktop entry를 참고하세요)
++ obsidian 당신의 옵시디언 레포지토리를 다운로드 합니다.
+(물론 쉘 스크립트 파일에 옵시디언 레포지토리 링크를 등록해야 합니다.)
 ![vimset_Screenshot](https://github.com/hoysong/songbird_vim/blob/main/example.png)
 
 1. patch.sh will 'rm ~/.vimrc'.
 patch.sh는 'rm ~/.vimrc'를 할것입니다.
 
-this mean you should backup your original .vimrc
-이것은 .vimrc를 백업해야 한다는 것을 의미합니다.
+this means this script will delete your original vimrc(if it exits) to make new vimrc.
+해당 스크립트가 새로운 vimrc를 만들기 위해 당신의 vimrc를 삭제한다는 것을 의미합니다.
 
-2. If you already satisfied with you're useing no
-3. w you don't have to use this shell script.
-만약 당신이 이미 사용중인 vim설정에 만족한다면 이 쉘 스크립드를 사용할 필요가 없습니다.
+if you don't want to overwrite your vimrc, backup somewhere.
+만약 당신의 vimrc를 덮어쓰는 것을 원치 않으신다면 어딘가에 백업하세요.
+
+2. If you already satisfied with you're vim, you don't have to use this shell script.
+당신이 이미 사용중인 vim에 만족한다면 이 쉘 스크립드를 사용할 필요가 없습니다.
 
 # how to install
 bash patch.sh 를 통해 스크립트를 실행합니다.
