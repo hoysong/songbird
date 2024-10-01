@@ -13,15 +13,15 @@
 + 
 # 레포지토리 정보
 + vim의 일부 유용한 플러그인들을 간단하게 패치할 수 있는 스크립트입니다.
-+ NerdTree 플러그인: vim화면 좌측에 파일트리를 생성
++ NerdTree 플러그인: vim화면 좌측에 파일트리를 생성.
 + airline을 통해 편집중인 파일의 상태를 직관적으로 확인 가능.
-+ cocnvim을 통해 vscode의 자동완성 기능.
++ cocnvim을 통해 vscode의 함수추천기능 사용.
 + include한 헤더로부터의 함수들도 추적합니다.
 + 간단한 문법검사.
 + obsidian의 appimg를 다운로드 합니다.
 + obsidian을 desktop entry에 등록합니다.
 (desktop entry를 참고하세요)
-+ obsidian 당신의 옵시디언 레포지토리를 다운로드 합니다.
++ obsidian 레포지토리를 다운로드 합니다.
 (물론 쉘 스크립트 파일에 옵시디언 레포지토리 링크를 등록해야 합니다.)
 ![vimset_Screenshot](https://github.com/hoysong/songbird_vim/blob/main/example.png)
 
@@ -31,8 +31,8 @@ patch.sh는 'rm ~/.vimrc'를 할것입니다.
 this means this script will delete your original vimrc(if it exits) to make new vimrc.
 해당 스크립트가 새로운 vimrc를 만들기 위해 당신의 vimrc를 삭제한다는 것을 의미합니다.
 
-if you don't want to overwrite your vimrc, backup somewhere.
-만약 당신의 vimrc를 덮어쓰는 것을 원치 않으신다면 어딘가에 백업하세요.
+if you don't want to overwrite your original vimrc, backup somewhere.
+기존 vimrc를 덮어쓰는 것을 원치 않으신다면 어딘가에 백업하세요.
 
 2. If you already satisfied with you're vim, you don't have to use this shell script.
 당신이 이미 사용중인 vim에 만족한다면 이 쉘 스크립드를 사용할 필요가 없습니다.
